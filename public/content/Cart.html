@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="border rounded shadow p-2">
+    <nav class="navbar navbar-light bg-light rounded">
+      <a class="navbar-brand">Carrito de compras</a>
+      <div
+        id="textSearch"
+        data-z-component="../common/TextSearch"
+        style="max-width: 160px"
+      ></div>
+    </nav>
+    <table id="productsList" class="mt-2 w-100 table table-sm">
+      <thead>
+        <th data-z-field="id">ID</th>
+        <th data-z-field="name">Producto</th>
+        <th data-z-field="price">Precio</th>
+        <th
+          data-z-field="iconActive"
+          data-z-clickable="true"
+          data-z-cell-class="text-center"
+          class="text-center"
+          style="width: 60px"
+        >
+          Comprar
+        </th>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button id="buyBtn" class="btn btn-primary">Ir a pagar</button>
+    <br />
+    <button id="restartBtn" class="btn btn-warning">Reiniciar carrito</button>
+  </div>
+</div>
